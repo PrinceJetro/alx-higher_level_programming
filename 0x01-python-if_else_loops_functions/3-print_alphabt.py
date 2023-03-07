@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for i in range(97,123):
-    if chr(i) != 'e' and chr(i) != "q":
-        print(f"{chr(i)}")
+for char in range(26):
+    if char != 4 and char != 16:
+        print("{:s}".format(chr(char + ord("a"))), end="")
